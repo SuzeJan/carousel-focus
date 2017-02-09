@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    vertical-align: center;
+}
+
+body {
+    padding: 20px;
+}
+
+#container {
+    width: 960px;
+    height: 600px;
+    border: 3px solid #ccc;
+    /*以下是关键点的属性*/
+    position: relative;
+    overflow: hidden;
+}
+
+#list {
+    width: 6720px;
+    height: 600px;
+    position: absolute;
+}
+
+#list img {
+    width: 960px;
+    height: 600px;
+    float: left;
+}
+
+#buttons {
+    width: 300px;
+    height: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 330px;
+
+}
+
+#buttons span {
+    width: 10px;
+    height: 10px;
+    float: left;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: #333;
+    margin-right: 45px;
+}
+
+#buttons .on {
+    background: #ff6e00;
+}
+
+.arrow {
+    width: 64px;
+    height: 64px;
+    display: block;
+    opacity: 0.7;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+}
+
+.arrow:hover {
+    opacity: 1;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+
+#container:hover .arrow {
+    display: block;
+}
+
+#prev {
+    background: url("images/arrow_left.png");
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    display: none;
+}
+
+#next {
+    background: url("images/arrow_right.png");
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    display: none;
+}
